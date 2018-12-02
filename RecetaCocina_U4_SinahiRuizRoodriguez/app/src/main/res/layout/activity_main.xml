@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#F5F6CE">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/receta"
+                android:layout_gravity="center"/>
+                !
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RECETAS DE COCINA"
+        android:layout_gravity="center"
+        android:textColor="#819FF7"
+        android:textSize="15dp"/>
+
+    <!--- ID -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#3B0B17"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id"
+        android:ems="10"
+        android:layout_gravity="center"
+        />
+
+    <!--- NOMBRE -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre Receta"
+        android:textColor="#3B0B17"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombre"
+        android:ems="10"
+        android:layout_gravity="center"/>
+
+
+    <!--- INGREDIENTES -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingredientes"
+        android:layout_gravity="center"
+        android:textColor="#3B0B17"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ingredientes"
+        android:ems="10"
+        android:layout_gravity="center"/>
+
+    <!--- PREPARACION -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preparacion"
+        android:layout_gravity="center"
+        android:textColor="#3B0B17"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/preparacion"
+        android:ems="10"
+        android:layout_gravity="center"/>
+
+
+    <!--- OBSERVACIONES -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Observaciones"
+        android:layout_gravity="center"
+        android:textColor="#3B0B17"/>
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/observaciones"
+        android:ems="10"
+        android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Insertar"
+        android:id="@+id/insertar"
+        android:layout_marginLeft="60dp"
+        android:textColor="#8A0868"
+        android:background="#F8E6E0"/>
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Consultar"
+        android:id="@+id/consultar"
+        android:textColor="#8A0868"
+        android:background="#F8E6E0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:id="@+id/eliminar"
+        android:layout_marginLeft="60dp"
+        android:textColor="#8A0868"
+        android:background="#F8E6E0"/>
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Modificar"
+        android:id="@+id/actualizar"
+        android:textColor="#8A0868"
+        android:background="#F8E6E0"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
